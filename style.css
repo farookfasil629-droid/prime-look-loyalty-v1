@@ -27,3 +27,47 @@ button {
   border-radius: 12px;
   padding: 20px;
 }
+/* PRIME LOOK Registration Design */
+main {
+  width: 100%;
+  padding: 30px 16px;
+  text-align: center;
+}
+
+main .card {
+  width: 100%;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 30px 24px;
+  border: 1px solid #d4af37;
+  border-radius: 18px;
+  background: #1c1c1c;
+  box-shadow: 0 8px 30px #0008;
+  text-align: left;
+}
+
+main .card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+main .card label {
+  display: block;
+  margin: 12px 0 8px;
+}
+
+main .card input:not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #8a742c;
+  border-radius: 8px;
+  background: #292929;
+  color: white;
+}
+
+main .card button {
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+}
