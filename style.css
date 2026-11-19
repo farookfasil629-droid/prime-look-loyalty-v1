@@ -1,0 +1,29 @@
+/* PRIME LOOK — Black & Gold Theme */
+:root {
+  --gold: #d4af37;
+  --black: #111111;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+}
+h1, h2, h3 { color: var(--gold); }
+button {
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+.card {
+  background: #1c1c1c;
+  border: 1px solid #6b5722;
+  border-radius: 12px;
+  padding: 20px;
+}
