@@ -19,7 +19,7 @@ p{color:#eee;line-height:1.6}
 <p>Welcome to PRIME LOOK</p>
 <section class="card">
 <h2>Customer Registration</h2>
-<form>
+<form id="registrationForm">
 <label for="name">Full Name</label>
 <input type="text" id="name" name="name" required>
 <br><br>
@@ -36,5 +36,33 @@ p{color:#eee;line-height:1.6}
 </form>
 </section>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = "https://gecyacvriaaldfdmqjyb.supabase.co";
+  const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_bN0pkSe7NUvFznCiXz4zDg_qxL5MAJF";
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+  );
+document.getElementById("registrationForm")
+  .addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const whatsapp = document.getElementById("whatsapp").value.trim();
+    const birthday = document.getElementById("birthday").value;
+
+    console.log("Registration form submitted:", {
+      name,
+      email,
+      whatsapp,
+      birthday
+    });
+
+    alert("Form received! Database registration is not enabled yet.");
+  });
+</script>
 </body>
 </html>
